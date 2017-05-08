@@ -56,6 +56,7 @@ class Baby_Step_Shortcodes {
 			'no_found_rows'          => true,
 			'update_post_meta_cache' => false,
 			'update_post_term_cache' => false,
+			'posts_per_page'         => 1000,
 		) ) );
 
 		// Buffer the output.
