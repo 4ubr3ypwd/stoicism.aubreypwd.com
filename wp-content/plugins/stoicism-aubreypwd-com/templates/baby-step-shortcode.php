@@ -4,6 +4,12 @@
  *
  * @since 1.0.0
  */
+
+if ( ! isset( $baby_steps ) ) {
+
+	// This template is being loaded without a query.
+	return;
+}
 ?>
 
 <?php if ( $baby_steps->have_posts() ) : ?>
