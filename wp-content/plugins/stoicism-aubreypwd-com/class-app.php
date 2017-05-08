@@ -28,7 +28,6 @@ class App {
 	private function classes() {
 		require_once( 'class-term-cpt.php' );
 		require_once( 'class-baby-step-cpt.php' );
-		require_once( 'class-baby-step-taxonomy.php' );
 	}
 
 	/**
@@ -40,7 +39,7 @@ class App {
 	 */
 	private function vendor() {
 		require_once( 'vendor/WebDevStudios/CPT_Core/CPT_Core.php' );
-		require_once( 'vendor/WebDevStudios/Taxonomy_Core/Taxonomy_Core.php' );
+		// require_once( 'vendor/WebDevStudios/Taxonomy_Core/Taxonomy_Core.php' );
 	}
 
 	/**
@@ -55,8 +54,5 @@ class App {
 
 		// The baby steps.
 		$this->baby_step_cpt = new Baby_Step_CPT();
-
-		// Baby step taxonomy.
-		$this->baby_step_taxonomy = new Baby_Step_Taxonomy();
 	}
 }
