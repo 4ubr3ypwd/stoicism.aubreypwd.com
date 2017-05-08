@@ -27,7 +27,7 @@ class App {
 	 */
 	private function classes() {
 		require_once( 'class-term-cpt.php' );
-		require_once( 'class-baby-step-cpt.php' );
+		require_once( 'class-beginner-baby-step-cpt.php' );
 	}
 
 	/**
@@ -52,7 +52,7 @@ class App {
 		// Attach the term CPT!
 		$this->term_cpt = new Term_CPT();
 
-		// The baby steps.
-		$this->baby_step_cpt = new Baby_Step_CPT();
+		// Beginner Baby Steps.
+		$this->baby_step_cpt = new Beginner_Baby_Step_CPT();
 	}
 }
