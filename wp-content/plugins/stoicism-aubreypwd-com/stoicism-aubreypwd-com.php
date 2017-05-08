@@ -37,5 +37,3 @@ require_once( 'class-app.php' );
 // Start a new loader.
 $app = new App();
 
-// Attach the term CPT!
-$app->term_cpt = new Term_CPT();
