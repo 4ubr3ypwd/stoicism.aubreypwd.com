@@ -28,6 +28,7 @@ class App {
 	private function classes() {
 		require_once( 'class-term-cpt.php' );
 		require_once( 'class-baby-step-cpt.php' );
+		require_once( 'class-library-cpt.php' );
 		require_once( 'class-baby-step-level-taxonomy.php' );
 		require_once( 'class-baby-step-shortcodes.php' );
 	}
@@ -57,8 +58,11 @@ class App {
 		// The baby steps.
 		$this->baby_step_cpt = new Baby_Step_CPT();
 
+		// Library.
+		$this->library = new Library();
+
 		// Baby step taxonomy.
-		$this->Baby_Step_Level_Taxonomy = new Baby_Step_Level_Taxonomy();
+		$this->baby_step_level_taxonomy = new Baby_Step_Level_Taxonomy();
 
 		// Baby step short codes.
 		$this->baby_step_shortcodes = new Baby_Step_Shortcodes();
