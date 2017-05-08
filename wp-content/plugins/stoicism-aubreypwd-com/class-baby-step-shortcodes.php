@@ -51,8 +51,11 @@ class Baby_Step_Shortcodes {
 		}
 
 		$baby_steps = new \WP_Query( array_merge( $args, array(
-			'post_type'   => 'baby-steps',
-			'post_status' => 'publish',
+			'post_type'              => 'baby-steps',
+			'post_status'            => 'publish',
+			'no_found_rows'          => true,
+			'update_post_meta_cache' => false,
+			'update_post_term_cache' => false,
 		) ) );
 
 		// Buffer the output.
