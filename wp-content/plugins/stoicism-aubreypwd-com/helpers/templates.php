@@ -94,7 +94,7 @@ function display_the_library_description() {
 	}
 
 	// Description.
-	echo wp_kses_post( $description );
+	echo wp_kses_post( wpautop( $description ) );
 }
 
 /**
@@ -120,7 +120,7 @@ function display_the_library_notes() {
 	}
 
 	// Notes.
-	echo wp_kses_post( $notes );
+	echo wp_kses_post( wpautop( $notes ) );
 }
 
 /**
