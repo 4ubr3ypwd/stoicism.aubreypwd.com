@@ -104,5 +104,13 @@ class Library_Fields {
 			'id'       => 'description',
 			'type'     => 'wysiwyg',
 		) );
+
+		// Notes.
+		$this->metabox->add_field( array(
+			'name'     => esc_html__( 'Notes', 'aubreypwd-stoicism' ),
+			'desc'     => esc_html__( 'Your personal notes on it.', 'aubreypwd-stoicism' ),
+			'id'       => 'notes',
+			'type'     => 'wysiwyg',
+		) );
 	}
 }

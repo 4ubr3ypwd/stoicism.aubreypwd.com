@@ -19,4 +19,8 @@
 	<!-- Description -->
 	<dt><?php esc_html_e( 'Description', 'aubreypwd-stoicism' ); ?></dt>
 	<dd><?php display_the_library_description(); ?></dd>
+
+	<!-- Notes -->
+	<dt><?php esc_html_e( 'My Notes', 'aubreypwd-stoicism' ); ?></dt>
+	<dd><?php display_the_library_notes(); ?></dd>
 </dl>

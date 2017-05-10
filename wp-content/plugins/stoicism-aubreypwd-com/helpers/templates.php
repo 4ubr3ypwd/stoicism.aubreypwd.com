@@ -98,6 +98,32 @@ function display_the_library_description() {
 }
 
 /**
+ * Display the library item notes.
+ *
+ * @author Aubrey Portwood
+ * @since  1.0.0
+ *
+ * @return void Early bail if we don't have notes.
+ */
+function display_the_library_notes() {
+
+	// Get the notes.
+	$notes = get_post_meta( get_the_ID(), 'notes', true );
+
+	if ( '' === trim( $notes ) ) {
+
+		// No notes.
+		esc_html_e( 'No notes', 'aubreypwd-stoicism' );
+
+		// Just stop here.
+		return;
+	}
+
+	// Notes.
+	echo wp_kses_post( $notes );
+}
+
+/**
  * Display the library item thumbnail.
  *
  * @author Aubrey Portwood
