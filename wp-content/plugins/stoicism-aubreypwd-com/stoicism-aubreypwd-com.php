@@ -34,6 +34,5 @@ namespace aubreypwd\Stoicism;
 // Load the loader.
 require_once( 'class-app.php' );
 
-// Start a new loader.
-$app = new App();
-
+// Start a new app.
+new App();
