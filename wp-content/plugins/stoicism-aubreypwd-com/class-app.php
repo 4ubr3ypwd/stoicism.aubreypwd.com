@@ -83,6 +83,7 @@ class App {
 		require_once( 'class-baby-step-cpt.php' );
 		require_once( 'class-library-cpt.php' );
 		require_once( 'class-library-list-taxonomy.php' );
+		require_once( 'class-reading-list-shortcodes.php' );
 		require_once( 'class-cmb2-loader.php' );
 		require_once( 'class-library-fields.php' );
 		require_once( 'class-baby-step-level-taxonomy.php' );
@@ -136,5 +137,8 @@ class App {
 
 		// Baby step short codes.
 		$this->baby_step_shortcodes = new Baby_Step_Shortcodes();
+
+		// Reading list shortcode.
+		$this->reading_list_shortcodes = new Reading_List_Shortcodes();
 	}
 }
