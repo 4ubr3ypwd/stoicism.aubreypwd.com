@@ -5,6 +5,7 @@ namespace aubreypwd\Stoicism;
 /**
  * Library fields.
  *
+ * @author Aubrey Portwood
  * @since  1.0.0
  */
 class CMB2_Loader {
@@ -12,6 +13,7 @@ class CMB2_Loader {
 	/**
 	 * Was CMB2 loaded or what?
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 *
 	 * @var boolean
@@ -21,6 +23,7 @@ class CMB2_Loader {
 	/**
 	 * Load CMB2.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	function __construct() {

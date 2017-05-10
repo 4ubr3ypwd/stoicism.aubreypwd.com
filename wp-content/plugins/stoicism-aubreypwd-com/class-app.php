@@ -5,6 +5,7 @@ namespace aubreypwd\Stoicism;
 /**
  * Loader.
  *
+ * @author Aubrey Portwood
  * @since  1.0.0
  */
 class App {
@@ -12,6 +13,7 @@ class App {
 	/**
 	 * Construct.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	function __construct() {
@@ -24,6 +26,7 @@ class App {
 	/**
 	 * Trigger notices.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	public function notices() {
@@ -33,6 +36,7 @@ class App {
 	/**
 	 * Check for requirements and show notices.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	public function check() {
@@ -44,6 +48,7 @@ class App {
 	/**
 	 * Not CMB2 Plugin notice.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	public function no_cmb2_notice() {
@@ -58,6 +63,7 @@ class App {
 	/**
 	 * Load application classes.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	private function classes() {
@@ -76,6 +82,7 @@ class App {
 	 * Note that CMB2 isn't here, we use the WP.org plugin to require
 	 * that library.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 *
 	 * @see  https://github.com/WebDevStudios/CPT_Core CPT Core is used to create CPT's fast!
@@ -88,6 +95,7 @@ class App {
 	/**
 	 * Load and attach app elements to the app class.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
 	 */
 	private function attach() {

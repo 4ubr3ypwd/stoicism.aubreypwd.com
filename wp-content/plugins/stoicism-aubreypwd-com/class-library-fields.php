@@ -5,6 +5,7 @@ namespace aubreypwd\Stoicism;
 /**
  * Library fields.
  *
+ * @author Aubrey Portwood
  * @since  1.0.0
  */
 class Library_Fields {
@@ -12,7 +13,9 @@ class Library_Fields {
 	/**
 	 * Create CMB2 Fields.
 	 *
+	 * @author Aubrey Portwood
 	 * @since  1.0.0
+	 *
 	 * @return Taxonomy_Core Taxonomy Core object.
 	 */
 	function __construct( $app ) {
