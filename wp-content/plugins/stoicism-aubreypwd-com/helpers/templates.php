@@ -96,3 +96,27 @@ function display_the_library_description() {
 	// Description.
 	echo wp_kses_post( $description );
 }
+
+/**
+ * Display the library item thumbnail.
+ *
+ * @author Aubrey Portwood
+ * @since  1.0.0
+ *
+ * @return void Early bail if no thumbnail.
+ */
+function display_the_library_thumbnail_image() {
+	$thumbnail = get_post_meta( get_the_ID(), 'thumbnail', true );
+
+	if ( ! is_string( $thumbnail ) || '' === trim( $thumbnail ) ) {
+
+		// No thumbnail.
+		return;
+	}
+
+	// The title of the resource.
+	$title = esc_attr( get_the_title() );
+
+	// The thumbnail.
+	echo wp_kses_post( "<img src='{$thumbnail}' alt='{$title}' />" );
+}

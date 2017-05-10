@@ -6,7 +6,11 @@
  */
 ?>
 
-<dl>
+<p class="the-library-thumbnail-image">
+	<?php display_the_library_thumbnail_image(); ?>
+</p>
+
+<dl class="the-library-details">
 
 	<!-- Link -->
 	<dt><?php esc_html_e( 'Link', 'aubreypwd-stoicism' ); ?></dt>
@@ -15,5 +19,4 @@
 	<!-- Description -->
 	<dt><?php esc_html_e( 'Description', 'aubreypwd-stoicism' ); ?></dt>
 	<dd><?php display_the_library_description(); ?></dd>
-
 </dl>
