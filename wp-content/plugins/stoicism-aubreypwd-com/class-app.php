@@ -21,6 +21,17 @@ class App {
 		$this->classes();
 		$this->attach();
 		$this->notices();
+		$this->helpers();
+	}
+
+	/**
+	 * Load helper functions.
+	 *
+	 * @author Aubrey Portwood
+	 * @since  1.0.0
+	 */
+	function helpers() {
+		require_once( 'helpers.php' );
 	}
 
 	/**
