@@ -35,7 +35,7 @@ class Baby_Step_Level_Taxonomy {
 
 			// /level instead of /baby-step-level.
 			'rewrite' => array(
-				'slug' => 'level',
+				'slug' => 'steps',
 			),
 		), array( 'baby-steps' ) );
 	}
