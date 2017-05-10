@@ -26,6 +26,10 @@ class Scripts {
 	 * @since  1.0.0
 	 */
 	public function scripts() {
-		wp_enqueue_style( 'aubreypwd-stoicism-css', plugins_url( 'assets/aubreypwd-stoicism.css', __FILE__ ), array(), time() );
+		if ( 'Penscratch' === wp_get_theme() ) {
+
+			// Penscratch customizations.
+			wp_enqueue_style( 'aubreypwd-stoicism-penscratch-css', plugins_url( 'assets/aubreypwd-stoicism-penscratch.css', __FILE__ ), array(), time() );
+		}
 	}
 }
