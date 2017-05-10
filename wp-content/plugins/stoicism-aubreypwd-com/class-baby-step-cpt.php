@@ -20,8 +20,8 @@ class Baby_Step_CPT extends \CPT_Core {
 		$labels = array(
 
 			// Names.
-			__( 'Baby Step', 'aubreypwd-stoicism' ),
-			__( 'Baby Steps', 'aubreypwd-stoicism' ),
+			__( 'Step', 'aubreypwd-stoicism' ),
+			__( 'Steps', 'aubreypwd-stoicism' ),
 
 			// Slug.
 			'baby-steps',
@@ -36,6 +36,11 @@ class Baby_Step_CPT extends \CPT_Core {
 
 			// The icon.
 			'menu_icon' => 'dashicons-exerpt-view',
+
+			// /step instead of /baby-steps/
+			'rewrite' => array(
+				'slug' => 'step',
+			),
 		);
 
 		// Use CPT_Core to create the CPT.

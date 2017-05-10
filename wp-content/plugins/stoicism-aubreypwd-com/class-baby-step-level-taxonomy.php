@@ -24,8 +24,8 @@ class Baby_Step_Level_Taxonomy {
 		$taxonomy = array(
 
 			// Actual names.
-			__( 'Baby Step Level', 'aubreypwd-stoicism' ),
-			__( 'Baby Step Levels', 'aubreypwd-stoicism' ),
+			__( 'Level', 'aubreypwd-stoicism' ),
+			__( 'Levels', 'aubreypwd-stoicism' ),
 
 			// Slug name.
 			'baby-step-level',
