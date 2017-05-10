@@ -57,6 +57,7 @@ class Baby_Step_Shortcodes {
 			'update_post_meta_cache' => false,
 			'update_post_term_cache' => false,
 			'posts_per_page'         => 1000,
+			'order_by'               => 'post_title',
 		) ) );
 
 		// Buffer the output.
