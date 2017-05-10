@@ -78,6 +78,7 @@ class App {
 	 * @since  1.0.0
 	 */
 	private function classes() {
+		require_once( 'class-scripts.php' );
 		require_once( 'class-term-cpt.php' );
 		require_once( 'class-content.php' );
 		require_once( 'class-baby-step-cpt.php' );
@@ -140,5 +141,8 @@ class App {
 
 		// Reading list shortcode.
 		$this->reading_list_shortcodes = new Reading_List_Shortcodes();
+
+		// Add scripts.
+		$this->scripts = new Scripts();
 	}
 }
