@@ -80,7 +80,6 @@ class App {
 	private function classes() {
 		require_once( 'class-term-cpt.php' );
 		require_once( 'class-content.php' );
-		require_once( 'class-template.php' );
 		require_once( 'class-baby-step-cpt.php' );
 		require_once( 'class-library-cpt.php' );
 		require_once( 'class-library-list-taxonomy.php' );
@@ -141,10 +140,5 @@ class App {
 
 		// Reading list shortcode.
 		$this->reading_list_shortcodes = new Reading_List_Shortcodes();
-
-		$this->baby_step_level_taxonomy_template = new Template( array(
-			'taxonomy' => 'baby-step-level',
-			'template' => 'baby-step-level-taxonomy.php',
-		) );
 	}
 }
