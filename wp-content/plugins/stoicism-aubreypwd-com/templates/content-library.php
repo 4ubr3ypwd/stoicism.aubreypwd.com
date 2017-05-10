@@ -7,6 +7,13 @@
 ?>
 
 <dl>
+
+	<!-- Link -->
 	<dt><?php esc_html_e( 'Link', 'aubreypwd-stoicism' ); ?></dt>
 	<dd><?php display_the_library_link(); ?></dd>
+
+	<!-- Description -->
+	<dt><?php esc_html_e( 'Description', 'aubreypwd-stoicism' ); ?></dt>
+	<dd><?php display_the_library_description(); ?></dd>
+
 </dl>
