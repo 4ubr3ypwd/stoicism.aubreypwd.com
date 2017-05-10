@@ -15,8 +15,8 @@ class Library_Fields {
 	 * @since  1.0.0
 	 * @return Taxonomy_Core Taxonomy Core object.
 	 */
-	function __construct() {
-		if ( ! class_exists( 'CMB2' ) ) {
+	function __construct( $app ) {
+		if ( false === $app->cmb2->loaded ) {
 
 			// The CMB2 plugin must not be activated.
 			return;

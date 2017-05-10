@@ -27,7 +27,16 @@ class App {
 	 * @since  1.0.0
 	 */
 	public function notices() {
-		if ( ! class_exists( 'CMB2' ) ) {
+		add_action( 'init', array( $this, 'check' ) );
+	}
+
+	/**
+	 * Check for requirements and show notices.
+	 *
+	 * @since  1.0.0
+	 */
+	public function check() {
+		if ( false === $this->cmb2->loaded ) {
 			add_action( 'admin_notices', array( $this, 'no_cmb2_notice' ) );
 		}
 	}
@@ -55,6 +64,7 @@ class App {
 		require_once( 'class-term-cpt.php' );
 		require_once( 'class-baby-step-cpt.php' );
 		require_once( 'class-library-cpt.php' );
+		require_once( 'class-cmb2-loader.php' );
 		require_once( 'class-library-fields.php' );
 		require_once( 'class-baby-step-level-taxonomy.php' );
 		require_once( 'class-baby-step-shortcodes.php' );
@@ -62,6 +72,9 @@ class App {
 
 	/**
 	 * Load vendor libraries.
+	 *
+	 * Note that CMB2 isn't here, we use the WP.org plugin to require
+	 * that library.
 	 *
 	 * @since  1.0.0
 	 *
@@ -79,6 +92,9 @@ class App {
 	 */
 	private function attach() {
 
+		// Load CMB2.
+		$this->cmb2 = new CMB2_Loader();
+
 		// Attach the term CPT!
 		$this->term_cpt = new Term_CPT();
 
@@ -89,7 +105,7 @@ class App {
 		$this->library = new Library_CPT();
 
 		// Fields for the library.
-		$this->library_fields = new Library_Fields();
+		$this->library_fields = new Library_Fields( $this );
 
 		// Baby step taxonomy.
 		$this->baby_step_level_taxonomy = new Baby_Step_Level_Taxonomy();
