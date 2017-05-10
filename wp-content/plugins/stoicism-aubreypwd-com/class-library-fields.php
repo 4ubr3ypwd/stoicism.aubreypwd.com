@@ -80,5 +80,29 @@ class Library_Fields {
 			'id'       => 'normal_url',
 			'type'     => 'text_url',
 		) );
+
+		// Hardcopy.
+		$this->metabox->add_field( array(
+			'name'     => esc_html__( 'Hardcopy', 'aubreypwd-stoicism' ),
+			'desc'     => esc_html__( 'If you have a hard-copy of the actual resource, upload that here. Will use this when no links are available (we host the file).', 'aubreypwd-stoicism' ),
+			'id'       => 'file',
+			'type'     => 'file',
+		) );
+
+		// Thumbnail.
+		$this->metabox->add_field( array(
+			'name'     => esc_html__( 'Thumbnail', 'aubreypwd-stoicism' ),
+			'desc'     => esc_html__( 'A thumbnail for the resource.', 'aubreypwd-stoicism' ),
+			'id'       => 'thumbnail',
+			'type'     => 'file',
+		) );
+
+		// Description.
+		$this->metabox->add_field( array(
+			'name'     => esc_html__( 'Description', 'aubreypwd-stoicism' ),
+			'desc'     => esc_html__( 'A description of the resource.', 'aubreypwd-stoicism' ),
+			'id'       => 'description',
+			'type'     => 'wysiwyg',
+		) );
 	}
 }
