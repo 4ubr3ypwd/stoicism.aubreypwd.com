@@ -7,7 +7,7 @@ namespace aubreypwd\Stoicism;
  *
  * @since  1.0.0
  */
-class Library extends \CPT_Core {
+class Library_CPT extends \CPT_Core {
 
 	/**
 	 * Create CPT.

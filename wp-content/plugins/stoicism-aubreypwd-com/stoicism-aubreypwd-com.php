@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: Stoicism
+Plugin Name: Aubrey on Stoicism
 Plugin URI: https://github.com/aubreypwd/stoicism.aubreypwd.com
 Description: The main plugin for <a href="http://stoicism.aubreypwd.com" target="_blank">stoicism.aubreypwd.com.</a>
 Version: 1.0.0
