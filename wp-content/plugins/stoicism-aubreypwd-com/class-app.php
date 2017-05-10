@@ -82,6 +82,7 @@ class App {
 		require_once( 'class-content.php' );
 		require_once( 'class-baby-step-cpt.php' );
 		require_once( 'class-library-cpt.php' );
+		require_once( 'class-library-list-taxonomy.php' );
 		require_once( 'class-cmb2-loader.php' );
 		require_once( 'class-library-fields.php' );
 		require_once( 'class-baby-step-level-taxonomy.php' );
@@ -121,14 +122,17 @@ class App {
 		// The baby steps.
 		$this->baby_step_cpt = new Baby_Step_CPT();
 
+		// Baby step taxonomy.
+		$this->baby_step_level_taxonomy = new Baby_Step_Level_Taxonomy();
+
 		// Library.
 		$this->library = new Library_CPT();
 
 		// Fields for the library.
 		$this->library_fields = new Library_Fields( $this );
 
-		// Baby step taxonomy.
-		$this->baby_step_level_taxonomy = new Baby_Step_Level_Taxonomy();
+		// Taxonomy for reading lists.
+		$this->library_list_taxonomy = new Library_List_Taxonomy();
 
 		// Baby step short codes.
 		$this->baby_step_shortcodes = new Baby_Step_Shortcodes();
