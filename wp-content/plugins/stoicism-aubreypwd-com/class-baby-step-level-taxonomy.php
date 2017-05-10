@@ -31,6 +31,12 @@ class Baby_Step_Level_Taxonomy {
 			'baby-step-level',
 		);
 
-		return $this->taxonomy = register_via_taxonomy_core( $taxonomy, array(), array( 'baby-steps' ) );
+		return $this->taxonomy = register_via_taxonomy_core( $taxonomy, array(
+
+			// /level instead of /baby-step-level.
+			'rewrite' => array(
+				'slug' => 'level',
+			),
+		), array( 'baby-steps' ) );
 	}
 }
