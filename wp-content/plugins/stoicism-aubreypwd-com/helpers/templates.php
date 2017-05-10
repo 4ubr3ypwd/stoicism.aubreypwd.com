@@ -87,7 +87,7 @@ function display_the_library_description() {
 	if ( '' === trim( $description ) ) {
 
 		// No description.
-		esc_html_e( 'No description', 'aubreypwd-stoicism' );
+		esc_html_e( 'No description.', 'aubreypwd-stoicism' );
 
 		// Just stop here.
 		return;
@@ -113,7 +113,7 @@ function display_the_library_notes() {
 	if ( '' === trim( $notes ) ) {
 
 		// No notes.
-		esc_html_e( 'No notes', 'aubreypwd-stoicism' );
+		esc_html_e( 'No notes.', 'aubreypwd-stoicism' );
 
 		// Just stop here.
 		return;
