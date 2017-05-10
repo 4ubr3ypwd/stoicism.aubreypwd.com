@@ -26,7 +26,7 @@ class Scripts {
 	 * @since  1.0.0
 	 */
 	public function scripts() {
-		if ( 'Penscratch' === wp_get_theme() ) {
+		if ( 'Penscratch' === (string) wp_get_theme() ) {
 
 			// Penscratch customizations.
 			wp_enqueue_style( 'aubreypwd-stoicism-penscratch-css', plugins_url( 'assets/aubreypwd-stoicism-penscratch.css', __FILE__ ), array(), time() );
