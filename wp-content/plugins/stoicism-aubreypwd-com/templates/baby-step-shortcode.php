@@ -13,11 +13,11 @@ if ( ! isset( $baby_steps ) ) {
 ?>
 
 <?php if ( $baby_steps->have_posts() ) : ?>
-	<ol>
+	<ul>
 		<?php while ( $baby_steps->have_posts() ) : $baby_steps->the_post(); ?>
 			<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 		<?php endwhile; ?>
-	</ol>
+	</ul>
 <?php endif;
 
 // Reset post data.
