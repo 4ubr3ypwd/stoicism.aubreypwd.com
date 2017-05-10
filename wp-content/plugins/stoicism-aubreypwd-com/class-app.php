@@ -68,6 +68,7 @@ class App {
 	 */
 	private function classes() {
 		require_once( 'class-term-cpt.php' );
+		require_once( 'class-content.php' );
 		require_once( 'class-baby-step-cpt.php' );
 		require_once( 'class-library-cpt.php' );
 		require_once( 'class-cmb2-loader.php' );
